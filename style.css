@@ -130,6 +130,10 @@ table {
   border-spacing: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
 main {
   display: flex;
   flex-direction: column;

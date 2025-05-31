@@ -14,10 +14,12 @@
     <header>
       <div class="nav-container">
         <div class="logo">
-          <p class="logo">Logo</p>
+          <p class="logo" data-aos="fade-right" data-aos-duration="2000">
+            Logo
+          </p>
         </div>
         <div class="nav-link">
-          <ul>
+          <ul data-aos="fade-left" data-aos-duration="2000">
             <li><a href="#about-section">About</a></li>
             <li><a href="#skills-section">Skills</a></li>
             <li><a href="#about-section">Projects</a></li>
@@ -32,28 +34,41 @@
       <section>
         <div class="section-landing">
           <div class="landing-container">
-            <h1 class="heading-1">Louise Clarence M Masajo</h1>
-            <p class="body">
+            <h1 class="heading-1" data-aos="fade-up" data-aos-duration="1500">
+              Louise Clarence M Masajo
+            </h1>
+            <p class="body" data-aos="fade-up" data-aos-duration="2000">
               I’m a full-stack developer with great experience and passion for
               coding and building plain interfaces. I have a manic love for
               great high-loaded projects. Plus, I’m an easy-going person and fit
               in any team. I work remotely and save your budget on my workplace.
               So, if you have a complicated task, you’ve found the right person.
             </p>
-            <img class="header-icon" src="./img/icon-2d.png" alt="icon-2d" />
+            <img
+              class="header-icon"
+              src="./img/icon-2d.png"
+              alt="icon-2d"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            />
           </div>
         </div>
       </section>
 
       <section>
-        <div class="section-skills">
+        <div
+          class="section-skills"
+          id="skills-section"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div class="skills-container">
-            <h2 class="heading-2">Skills</h2>
+            <h2 class="heading-2" data-aos="fade-up" data-aos-duration="2500">Skills</h2>
           </div>
         </div>
 
         <div class="skills-box-container">
-          <div class="skills-box">
+          <div class="skills-box" data-aos="fade-up" data-aos-duration="3000">
             <div class="icon-container">
               <i class="ph-bold ph-figma-logo" style="font-size: 64px"></i>
             </div>
@@ -73,18 +88,19 @@
             <p class="my-tools">PostgreSQL</p>
           </div>
 
-          <div class="skills-box">
+          <div class="skills-box" data-aos="fade-up" data-aos-duration="3000">
             <div class="icon-container">
               <i class="ph-bold ph-figma-logo" style="font-size: 64px"></i>
             </div>
 
             <h3 class="heading-3">Back-end Developer</h3>
             <p class="skills-content">
-              Develop business logic and back-end system to support the product,
-              create API, have vast experience with version control systems.
+              I code things from scratch, and gracefully bring the ideas to life
+              and to the bowser, paying maximal attention to your vision of the
+              product.
             </p>
-            <span>Languages:</span>
-            <p class="language">PHP, Python, Ruby, Java, Perl</p>
+            <span>Technologies Stack:</span>
+            <p class="language">HTML, JavaScript, Slim, CSS,Pug</p>
 
             <span>Tools:</span>
             <p class="my-tools">Yii</p>
@@ -93,18 +109,19 @@
             <p class="my-tools">PostgreSQL</p>
           </div>
 
-          <div class="skills-box">
+          <div class="skills-box" data-aos="fade-up" data-aos-duration="3000">
             <div class="icon-container">
               <i class="ph-bold ph-figma-logo" style="font-size: 64px"></i>
             </div>
 
             <h3 class="heading-3">Designer</h3>
             <p class="skills-content">
-              Develop business logic and back-end system to support the product,
-              create API, have vast experience with version control systems.
+              I create both easy and simple, and more complex and detailed
+              prototypes. Simplicity, convenience, usefulness and effectiveness
+              at the same time.
             </p>
-            <span>Languages:</span>
-            <p class="language">PHP, Python, Ruby, Java, Perl</p>
+            <span>Things I Do:</span>
+            <p class="language">UX, UI, Web, Mobile, Apps, Logos</p>
 
             <span>Tools:</span>
             <p class="my-tools">Yii</p>
@@ -114,7 +131,9 @@
           </div>
         </div>
         <div class="cv-button-container">
-          <button class="cv-button">Here is my CV</button>
+          <button class="cv-button" data-aos="fade-up" data-aos-duration="3000">
+            Here is my CV
+          </button>
         </div>
       </section>
       <br />
@@ -130,5 +149,10 @@
         </div>
       </section>
     </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
