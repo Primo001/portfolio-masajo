@@ -177,7 +177,20 @@ a:hover {
 .section-landing {
   margin-top: 10rem;
 }
-
+.pattern-bg {
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  width: 30rem;
+  opacity: 0.2;
+}
+.pattern-bg-2 {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 30rem;
+  opacity: 0.2;
+}
 .landing-container {
   background-image: url("./img/polka-dott.png");
   background-size: cover;
@@ -220,6 +233,7 @@ hr {
   height: 0.5rem;
   background-color: #697183;
   margin-top: 1rem;
+  margin-bottom: 6rem;
   overflow-x: hidden;
 }
 
@@ -233,6 +247,7 @@ h1.heading-1 {
 h2.heading-2 {
   color: white;
   font-size: 52px;
+  font-weight: 600;
   align-items: center;
   justify-content: center;
 }
@@ -241,6 +256,26 @@ h3.heading-3 {
   font-weight: 600;
   text-align: center;
   margin-top: 1rem;
+  color: #282d38;
+}
+h4.heading-4 {
+  font-size: 52px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-title{
+  font-size: 34px;
+  font-weight: 600;
+  color: #fecd4e;
+  margin-bottom: 1rem;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p.body {
@@ -299,6 +334,7 @@ p.body {
 }
 
 .skills-content {
+  color: #717d99;
   font-size: 18px;
   line-height: 33.6px;
   text-align: center;
@@ -326,6 +362,70 @@ p.body {
 .cv-button:hover {
   background-color: #3c65ff;
   color: white;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.wow-taxi {
+  width: 40rem;
+}
+.block-expert {
+  width: 25rem;
+}
+.paybox{
+  width: 15rem;
+}
+.project-image {
+  border-radius: 8px;
+  min-width: 45rem;
+  height: 400.844px;
+  background-color: #fecd4e;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-description-container {
+  margin-left: 2rem;
+  min-width: 45rem;
+  height: 25rem;
+  background-color: white;
+  border-bottom: solid #fecd4e;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-description {
+  width: 20rem;
+  line-height: 25.2px;
+  text-align: center;
+  align-items: center;
+  justify-self: center;
 }
 
 /* === Default styles (large screens) === */
@@ -501,10 +601,6 @@ p.body {
 
   h2.heading-2 {
     font-size: 20px;
-  }
-
-  h3.heading-3 {
-    font-size: 18px;
   }
 
   p.body {
